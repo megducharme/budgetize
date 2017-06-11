@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+	Budgetize
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 	<link href="main.css" rel="stylesheet">
+
+</head>
+<body class="body">
+	<div class="row">
+    <!-- uncomment code for absolute positioning tweek see top comment in css -->
+    <!-- <div class="absolute-wrapper"> </div> -->
+    <!-- Menu -->
+    <div class="side-menu">
+    
+    <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <div class="brand-wrapper">
+            <!-- Hamburger -->
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Brand -->
+            <div class="brand-name-wrapper">
+                <p class="navbar-brand">
+                    Account
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Main Menu -->
+    <div class="side-menu-container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#"></span>Dashboard</a></li>
+            <li class="menu-item"><a href="#"></span>Detailed History</a></li>
+			<li class="menu-item"><a href="#"></span>Settings</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+    </div>
+  <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="side-body">
+
+
+<!-- Trigger the modal with a button -->
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add Expense</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <p class="modal-title">Add new expense</p>
+            <p class="modal-subtitle">Enter your expense's details to add it to your account.</p>
+          </div>
+          <div class="modal-body">
+
+            <form>
+                <div class="form-group">
+                    <label class="form-title" for="exampleSelect1">Category</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option selected>Choose...</option>
+                      <option>Housing</option>
+                      <option>Groceries</option>
+                      <option>Eating Out</option>
+                      <option>Drinks</option>
+                      <option>Groceries</option>
+                      <option>Clothing</aoption>
+                      <option>Accessories</option>
+                      <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-title" for="exampleInputEmail1">Amount</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount">
+              </div>
+
+                <div class="form-text">
+                    <label class="form-title" for="exampleTextarea">Notes</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+            </form> 
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-action" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+
+      </div>
+</div>
+
+<!-- Data cards section -->
+   
+    <div class="cards">
+        <div class="port-container">
+            <div class="row row-work-one">
+                <div class="col-lg-3 card-two">
+                </div>
+                <div class="col-lg-3 card-two">
+                    </div>
+                <div class="col-lg-3 card-two">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="port-container">
+            <div class="row row-work-two">
+
+                <div class="col-lg-2 card">
+                    <div class="row card-header">
+                        <div class="col-lg-2 card-med">
+                            <h4 class="card-title">Expense categories</h4>
+                            <span class="glyphicon glyphicon-option-vertical"></span>
+                        </div>
+                    </div>
+                    
+                    <hr class="card-divider-med">
+                </div>
+
+            	<div class="col-lg-2 card">
+                 <h4 class="card-title">Budgeting</h4>
+                    <hr class="card-divider-med">   
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+        <div class="cards">
+        <div class="port-container">
+            <div class="row row-work-three">
+                <div class="col-lg-1 card-three">
+                    <h4 class="card-title">Spending trends</h4>
+                    <hr class="card-divider-large"> 
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
