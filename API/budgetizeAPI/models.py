@@ -1,23 +1,22 @@
 from django.db import models
 from datetime import datetime
 
-
 class User(models.Model):
     first_name = models.CharField(max_length=55)
     last_name = models.CharField(max_length=55)
 
 
 class TransactionType(models.Model):
-    name = models.Charfield(max_length=55)
+    name = models.CharField(max_length=55)
 
 
 class Location(models.Model):
-    name = models.Charfield(max_length=55)
+    name = models.CharField(max_length=55)
 
 
 class TransactionLocation(models.Model):
     location = models.ForeignKey(Location)
-    transaction = models.ForeignKey(Transaction)
+    transaction = models.ForeignKey('Transaction')
 
 
 class Transaction(models.Model):
