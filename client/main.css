@@ -196,17 +196,10 @@ p{
 
 .glyphicon-option-vertical{
   color:#78909C;
+  align-content: right;
 
 }
 
-.card-header{
-  width: auto;
-  display: inline-block;
-}
-
-.card-med{
-  display: inline-block;
-}
 
 /*Navigation Styling*/
 
