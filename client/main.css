@@ -309,6 +309,32 @@ p{
 
 /*CTA Button*/
 
+
+.dropdown-divider{
+  width: 100%;
+  color: #F5F5F5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu{
+  border:none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.dropdown-text{
+  font-size:14px;
+  font-family: 'Roboto';
+  font-weight: 400; 
+  color: #212121;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: transparent;
+    color: #673AB7;
+}
+
 .btn{
   margin-top: 25px;
   padding: 12px 25px 12px 25px;
@@ -415,6 +441,10 @@ p{
 
 .btn:focus, .btn:active:focus{
     outline: transparent;
+}
+
+li
+{ cursor: pointer; cursor: hand;
 }
 
 
