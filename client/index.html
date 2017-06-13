@@ -61,7 +61,18 @@
 
 
 <!-- Trigger the modal with a button -->
-    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add Expense</button>
+<!--     <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add Expense</button> -->
+
+        <div class="dropdown">
+            <button class="btn" type="button" data-toggle="dropdown">Add new
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-text"><a href="#">Income</a></li>
+                <hr class="dropdown-divider">
+              <li class="dropdown-text"><a data-toggle="modal" data-target="#myModal">Expense</a></li>
+            </ul>
+      </div>
+
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -134,7 +145,6 @@
 
                 <div class="col-lg-2 card">
                             <h4 class="card-title">Expense categories</h4>
-                            <span class="glyphicon glyphicon-option-vertical"></span>
                     <hr class="card-divider-med">
                 </div>
 
