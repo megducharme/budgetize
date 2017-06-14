@@ -104,12 +104,24 @@ p{
   float:none;
 }
 
+.form-group-radio{
+  width: 80%;
+  justify-content: center;
+  margin-left: 45px; 
+  padding-top: 20px;
+  float:none;
+}
+
 .form-text{
   width: 80%;
   justify-content: center;
   margin: 0 auto;
   padding-top: 15px;
   float:none;
+}
+
+.pac-container {
+    z-index: 1051 !important;
 }
 
 
@@ -387,7 +399,7 @@ p{
   padding: 12px 25px 12px 25px;
   background-color: #673AB7;
   margin-bottom: 24px;
-  margin-right: 12px;
+  margin-right: 25px;
   color: #fff;
   font-family: 'Roboto';
   font-size: 14px;
@@ -399,7 +411,7 @@ p{
   margin-top: 25px;
   padding: 12px 25px 12px 25px;
   margin-bottom: 24px;
-  margin-right: 12px;
+  margin-right: 25px;
   background-color: #7E57C2;
   color: #fff;
   font-family: 'Roboto';
@@ -412,7 +424,7 @@ p{
   margin-top: 25px;
   padding: 12px 25px 12px 25px;
   margin-bottom: 24px;
-  margin-right: 12px;
+  margin-right: 25px;
   background-color: #7E57C2;
   color: #fff;
   font-family: 'Roboto';
@@ -435,16 +447,12 @@ p{
   font-weight: 300;
 }
 
-
-
-
-
 .btn:focus, .btn:active:focus{
     outline: transparent;
 }
 
-li
-{ cursor: pointer; cursor: hand;
+li{
+  cursor: pointer; cursor: hand;
 }
 
 
