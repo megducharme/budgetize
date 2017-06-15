@@ -21,7 +21,7 @@ function getResponseFromAPI(){
 function postToAPI(){
 
     $.ajax({
-        url : 'http://localhost:8000/users',
+        url : 'http://localhost:8000/users/',
         type : 'POST',
         data : JSON.stringify({
             first_name: "Kyle",
