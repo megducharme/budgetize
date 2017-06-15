@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import datetime
+
 
 class User(models.Model):
     first_name = models.CharField(max_length=55)
@@ -21,5 +21,6 @@ class TransactionLocation(models.Model):
 
 class Transaction(models.Model):
     amount = models.CharField(max_length=55)
-    date = models.DateTimeField()
+    date = models.DateField()
     user = models.ForeignKey(User, related_name='transactions')
+    transaction_type = models.ForeignKey(TransactionType, related_name='transactions')
