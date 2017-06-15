@@ -3,7 +3,7 @@
 <head>
 
 	<title>
-	Budgetize
+	Budgett
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Aj_YJNYRsb6OGxbLpkQVhHxQ3fz7jog&libraries=places"></script>
+
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 
  	<link href="main.css" rel="stylesheet">
@@ -104,7 +106,6 @@
                       <option>Groceries</option>
                       <option>Eating Out</option>
                       <option>Drinks</option>
-                      <option>Groceries</option>
                       <option>Clothing</aoption>
                       <option>Accessories</option>
                       <option>Other</option>
@@ -149,11 +150,20 @@
         <div class="port-container">
             <div class="row row-work-one">
                 <div class="col-lg-3 card-two">
+                    <p class="card-description">Income</p>
+                    <p class="card-number">$9,854.45</p>
+                    <p class="card-change-up"><span class="glyphicon glyphicon-arrow-up"></span>  5% Increase</p>
                 </div>
+
                 <div class="col-lg-3 card-two">
-                    </div>
-                <div class="col-lg-3 card-two">
+                    <p class="card-description">Expenses</p>
+                    <p class="card-number">$4,312.86</p>
+                    <p class="card-change-down"><span class="glyphicon glyphicon-arrow-down"></span>  7% Decrease</p>
                 </div>
+
+                <div class="col-lg-3 card-two-summary">
+                    <p class="card-summary">Congratulations! You save a total of </p><p class="card-change-summary">$5541.59 </p><p class="card-summary">this month, which is 23% more than you saved last month.</p><i class="em em-clap"></i><i class="em em-clap"></i> 
+
             </a>
         </div>
     </div>
@@ -165,6 +175,7 @@
                 <div class="col-lg-2 card">
                             <h4 class="card-title">Expense categories</h4>
                     <hr class="card-divider-med">
+                    <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
 
             	<div class="col-lg-2 card">
@@ -261,6 +272,8 @@
 
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"/>
 
 </body>
 </html>
