@@ -27,6 +27,61 @@ p{
   color: #212121;
 }
 
+/*Body Navigation Styling*/
+
+.dropdown{
+  width: 120px;
+}
+
+
+.btn-calendar{
+  margin-top: 25px;
+  padding: 12px 25px 12px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #596573;
+  font-family: 'Roboto';
+  font-size: 14px;
+  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.10);
+  font-weight: 500;
+}
+
+.btn-calendar:hover{
+  margin-top: 25px;
+  padding: 12px 25px 12px 25px;
+  background-color: #7E57C2;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+
+.btn-calendar:active{
+  margin-top: 25px;
+  padding: 12px 25px 12px 25px;
+  background-color: #7E57C2;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+
+
+.btn-calendar:focus{
+  margin-top: 25px;
+  padding: 12px 25px 12px 25px;
+  background-color: #673AB7;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+
+
 
 /*Modal styling*/
 
@@ -120,12 +175,6 @@ p{
   float:none;
 }
 
-.pac-container {
-    z-index: 1051 !important;
-}
-
-
-
 /*
 *Card Styling*/
 
@@ -144,9 +193,59 @@ p{
   background-color: #fff;
   border-radius: 10px;
   margin-right: 30px;
-  height: 405px;
+  height: 420px;
   width: 405px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.03);
+}
+
+.card-in{
+  background-color: #F5F5F5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: -15px;
+  margin-top:-20px;
+  padding-top: 5px;
+  height: 355px;
+  width: 405px;
+}
+
+.row-category{
+  width:500px;
+}
+
+.expense-type{
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top:8px;
+  margin: auto;
+  margin-top: 6px;
+  height: 50px;
+  width: 95%;
+}
+
+.category-title{
+  font-size:14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #263238;
+}
+
+.category-amount{
+  font-size:14px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #212121;
+  justify-content: right;
+}
+
+.col-xs-6{
+  padding-left: 0px;
+  align-content: right;
+}
+
+.row-category{
+  width: 540px;
 }
 
 .card-two{
@@ -158,6 +257,14 @@ p{
   width: 260px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.03);
   text-align: center;
+}
+
+.body-buttons{
+  text-align: center;
+}
+
+.container{
+  width: 500px;
 }
 
 .card-two-summary{
@@ -195,7 +302,7 @@ p{
 .card-title{
   font-size:14px;
   text-align: left;
-  color: #263238;
+  color: #9E9E9E;
   padding-top: 15px;
   padding-left: 12px;
   font-weight: 400;
@@ -221,7 +328,7 @@ p{
 }
 
 .glyphicon-option-vertical{
-  color:#78909C;
+  color:#31B87A;
   align-content: right;
 
 }
@@ -245,7 +352,7 @@ p{
   align-content: center;
   padding-top: 16px;
   font-size: 13px;
-  color: #4CAF50;
+  color: #31B87A;
   font-weight: 400;
 }
 
@@ -259,23 +366,32 @@ p{
 
 .card-summary{
   display:inline;
-  color: #212121;
+  color: #4e4e4e;
   font-size:16px;
   font-weight: 400;
 }
 
 .card-change-summary{
   display:inline;
-  color: #4CAF50;
+  color: #31B87A;
+  font-size: 16px;
 }
 
 
 .glyphicon-arrow-up{
   font-size: 10px;
+  color: #31B87A;
 }
 
 .glyphicon-arrow-down{
   font-size: 10px;
+  color: #E54C4D;
+}
+
+.chart{
+  margin: auto;
+  width: 300px;
+  height: 300px;
 }
 
 /*Navigation Styling*/
@@ -330,10 +446,7 @@ p{
   background-color: #fff;
 }
 
-.container-fluid{
-  margin-top: 20px;
-  width: auto;
-}
+
 
 .side-menu .brand-name-wrapper .navbar-brand {
   display: block;
@@ -521,7 +634,10 @@ li{
 }
 
 
-
+.container-fluid{
+  margin-top: 20px;
+  width: 100%;
+}
 
 /* small screen */
 @media (max-width: 768px) {

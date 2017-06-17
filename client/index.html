@@ -12,7 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Aj_YJNYRsb6OGxbLpkQVhHxQ3fz7jog&libraries=places"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
 
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
@@ -172,15 +174,104 @@
         <div class="port-container">
             <div class="row row-work-two">
 
-                <div class="col-lg-2 card">
-                            <h4 class="card-title">Expense categories</h4>
-                    <hr class="card-divider-med">
-                    <canvas id="myChart" width="400" height="400"></canvas>
+              <div class="col-lg-2 card">
+                  <h4 class="card-title">Expense categories</h4>
+                  <hr class="card-divider-med">
+                  <div class="card-in">
+
+                    <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Housing</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$4,321</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Groceries</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$2,198</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Eating Out</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$743.43</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Drinks</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$199.32</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Clothing</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$1,103</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+                  <div class="expense-type">
+                    <div class="container">
+                        <div class="row-category">
+                            <div class="col-xs-6">
+                              <h5 class="category-title">Drinks</h5>
+                            </div>
+                            <div class="col-xs-6">
+                              <h5 class="category-amount">$456.32</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+
+
+
                 </div>
+              </div>
+
+
+
+
+
 
             	<div class="col-lg-2 card">
                  <h4 class="card-title">Budgeting</h4>
                     <hr class="card-divider-med">
+              
+                <div class="chart" id="donut_single"></div>
                 </div>
             </a>
         </div>
@@ -193,22 +284,14 @@
                 <div class="col-lg-1 card-three">
                     <h4 class="card-title">Spending trends</h4>
                     <hr class="card-divider-large">
+                        <div id="curve_chart"></div>
                 </div>
             </a>
         </div>
     </div>
 
 </div>
-<script type="text/javascript" src="main.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Aj_YJNYRsb6OGxbLpkQVhHxQ3fz7jog&libraries=places&callback=initAutocomplete" async defer></script>
-    <script>
-      // This example displays an address form, using the autocomplete feature
-      // of the Google Places API to help users fill in the information.
-
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+<script>
 
       var placeSearch, autocomplete;
       var componentForm = {
@@ -269,11 +352,16 @@
           });
         }
       }
-
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA1V-DwxEN9w5wQO2OptMV1AnKeN6pZbU&libraries=places&callback=initAutocomplete"
+    async defer></script>
+
+
+    <script type="text/javascript" src="main.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"/>
 
 </body>
 </html>
