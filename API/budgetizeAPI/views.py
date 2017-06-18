@@ -12,7 +12,7 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-    def postUserToDb(request):
+    def post_user(request):
         data = request.POST
         print("xxxxxxxrequest dataxxxxxx", data)
         user = User.obejet.create_user(
@@ -61,3 +61,14 @@ class TransactionViewSet(viewsets.ModelViewSet):
     """
     queryset = Transaction.objects.all()
     serializer_class = TransactionSerializer
+
+
+    def post_transaction(request):
+        data = request.POST
+        print("transaction data", data)
+        transaction = Transaction.obejet.create(
+            amount = data['amount'],
+            is_recurring = data['is_recurring'],
+            transaction_type = data['transaction_type'],
+            user = data['user'],
+            )

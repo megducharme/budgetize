@@ -30,6 +30,7 @@ function postTransaction(transaction){
     $.ajax({
         url : 'http://localhost:8000/transactions/',
         type : 'POST',
+        contentType: 'application/json',
         data : JSON.stringify(transaction),
         success : function(data) {
             console.log(data);
