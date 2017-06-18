@@ -38,4 +38,4 @@ class TransactionLocationSerializer(serializers.HyperlinkedModelSerializer):
 class TransactionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Transaction
-        fields = ('amount', 'date', 'user',)
+        fields = ('amount', 'user', "transaction_type", "is_recurring")

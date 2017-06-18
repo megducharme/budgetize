@@ -94,36 +94,36 @@ function drawLineChart() {
 ///////////testing the API///////////
 
 
-function getResponseFromAPI(){
-    console.log("inside API call")
+// function getResponseFromAPI(){
+//     console.log("inside API call")
 
-    $.ajax({url: "http://localhost:8000/users",
-        success: function(result){
-        console.log(result)
-        }
-    });
+//     $.ajax({url: "http://localhost:8000/users",
+//         success: function(result){
+//         console.log(result)
+//         }
+//     });
 
-}
+// }
 
-getResponseFromAPI()
+// getResponseFromAPI()
 
-function postToAPI(){
+// function postToAPI(){
 
-    $.ajax({
-        url : 'http://localhost:8000/users/',
-        type : 'POST',
-        data : {
-            "first_name": "Kyle",
-            "last_name": "Ducahrme"
-        },
-        success : function(data) {
-            console.log(data);
-        },
-        error : function(request,error)
-        {
-            console.log("didn't work, here's the error: ", error.responseText);
-        }
-    });
-}
+//     $.ajax({
+//         url : 'http://localhost:8000/users/',
+//         type : 'POST',
+//         data : {
+//             "first_name": "Kyle",
+//             "last_name": "Ducahrme"
+//         },
+//         success : function(data) {
+//             console.log(data);
+//         },
+//         error : function(request,error)
+//         {
+//             console.log("didn't work, here's the error: ", error.responseText);
+//         }
+//     });
+// }
 
-postToAPI()
+// postToAPI()

@@ -1,0 +1,44 @@
+[
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Housing"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Groceries"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Eating Out"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Drinks"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Clothing"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Accessories"
+    }
+  },
+  {
+    "model": "budgetizeAPI.TransactionType",
+    "fields": {
+      "name": "Other"
+    }
+  }
+]
