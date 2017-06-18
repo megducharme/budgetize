@@ -2,6 +2,7 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from .serializers import *
 from .models import *
+from django.http import HttpResponse, HttpResponseRedirect
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -10,6 +11,16 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+    def post_user(request):
+        data = request.POST
+        print("xxxxxxxrequest dataxxxxxx", data)
+        user = User.obejet.create_user(
+            first_name = data['first_name'],
+            last_name = data['last_name']
+            )
+        return HttpResponseRedirect(redirect_to='/')
+
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -50,3 +61,14 @@ class TransactionViewSet(viewsets.ModelViewSet):
     """
     queryset = Transaction.objects.all()
     serializer_class = TransactionSerializer
+
+
+    def post_transaction(request):
+        data = request.POST
+        print("transaction data", data)
+        transaction = Transaction.obejet.create(
+            amount = data['amount'],
+            is_recurring = data['is_recurring'],
+            transaction_type = data['transaction_type'],
+            user = data['user'],
+            )

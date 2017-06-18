@@ -91,6 +91,9 @@ function drawLineChart() {
 // });
 
 
+///////////testing the API///////////
+
+
 // function getResponseFromAPI(){
 //     console.log("inside API call")
 
@@ -102,15 +105,17 @@ function drawLineChart() {
 
 // }
 
+// getResponseFromAPI()
+
 // function postToAPI(){
 
 //     $.ajax({
 //         url : 'http://localhost:8000/users/',
 //         type : 'POST',
-//         data : JSON.stringify({
-//             first_name: "Kyle",
-//             last_name: "Ducahrme"
-//         }),
+//         data : {
+//             "first_name": "Kyle",
+//             "last_name": "Ducahrme"
+//         },
 //         success : function(data) {
 //             console.log(data);
 //         },
@@ -119,7 +124,6 @@ function drawLineChart() {
 //             console.log("didn't work, here's the error: ", error.responseText);
 //         }
 //     });
-
 // }
 
 // postToAPI()

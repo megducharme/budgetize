@@ -102,32 +102,32 @@
 
                 <div class="form-group">
                     <label class="form-title" for="exampleSelect1">Category</label>
-                    <select class="form-control" id="exampleSelect1">
+                    <select class="form-control" id="transactionTypeSelect">
                       <option selected>Choose...</option>
-                      <option>Housing</option>
-                      <option>Groceries</option>
-                      <option>Eating Out</option>
-                      <option>Drinks</option>
-                      <option>Clothing</aoption>
-                      <option>Accessories</option>
-                      <option>Other</option>
+                      <option value="0">Housing</option>
+                      <option value="1">Groceries</option>
+                      <option value="2">Eating Out</option>
+                      <option value="3">Drinks</option>
+                      <option value="4">Clothing</aoption>
+                      <option value="5">Accessories</option>
+                      <option value="6">Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label class="form-title" for="exampleInputEmail1">Amount</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount ($)">
+                    <input type="text" class="form-control" id="transactionAmount" aria-describedby="emailHelp" placeholder="Enter amount ($)">
               </div>
 
         <div class="form-group-radio">
 
             <div class="col-md-9">
                 <label class="radio-inline">
-                    <input checked="checked" data-val="true" data-val-required="The IsSmallBusiness field is required." id="IsSmallBusiness" name="IsSmallBusiness" type="radio" value="False">
+                    <input checked="checked" data-val="true" data-val-required="The IsSmallBusiness field is required." id="isRecurring" name="IsSmallBusiness" type="radio" value="False">
                     One-time
                 </label>
                 <label class="radio-inline">
-                    <input id="IsSmallBusiness" name="IsSmallBusiness" type="radio" value="True">
+                    <input id="isRecurring" name="IsSmallBusiness" type="radio" value="True">
                     Recurring
                 </label>
                 <span class="field-validation-valid help-block" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="col-lg-3 card-two-summary">
-                    <p class="card-summary">Congratulations! You save a total of </p><p class="card-change-summary">$5541.59 </p><p class="card-summary">this month, which is 23% more than you saved last month.</p><i class="em em-clap"></i><i class="em em-clap"></i> 
+                    <p class="card-summary">Congratulations! You save a total of </p><p class="card-change-summary">$5541.59 </p><p class="card-summary">this month, which is 23% more than you saved last month.</p><i class="em em-clap"></i><i class="em em-clap"></i>
 
             </a>
         </div>
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="expense-type">
                     <div class="container">
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="expense-type">
                     <div class="container">
@@ -216,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="expense-type">
                     <div class="container">
@@ -229,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="expense-type">
                     <div class="container">
@@ -242,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
                   <div class="expense-type">
                     <div class="container">
@@ -255,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                  </div>
 
 
 
@@ -270,7 +270,7 @@
             	<div class="col-lg-2 card">
                  <h4 class="card-title">Budgeting</h4>
                     <hr class="card-divider-med">
-              
+
                 <div class="chart" id="donut_single"></div>
                 </div>
             </a>
@@ -359,6 +359,7 @@
 
 
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="api.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
