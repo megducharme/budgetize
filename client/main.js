@@ -9,10 +9,11 @@ google.charts.setOnLoadCallback(drawLineChart);
 function drawPieChart() {
 	var data = google.visualization.arrayToDataTable([
 	  ['Effort', 'Amount given'],
-	  ['Housing',     50],
-	  ['Eating Out',  20],
+	  ['Housing',     40],
+	  ['Groceries',  15],
+	  ['Eating Out',     15],
 	  ['Drinks',     10],
-	  ['Drinks',     30],
+	  ['Clothing',     20],
 
 	]);
 
