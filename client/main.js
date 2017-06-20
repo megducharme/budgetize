@@ -9,10 +9,11 @@ google.charts.setOnLoadCallback(drawLineChart);
 function drawPieChart() {
 	var data = google.visualization.arrayToDataTable([
 	  ['Effort', 'Amount given'],
-	  ['Housing',     50],
-	  ['Eating Out',  20],
+	  ['Housing',     40],
+	  ['Groceries',  15],
+	  ['Eating Out',     15],
 	  ['Drinks',     10],
-	  ['Drinks',     30],
+	  ['Clothing',     20],
 
 	]);
 
@@ -26,28 +27,30 @@ function drawPieChart() {
 	  },
 	  colors: ['#5E35B1', '#7e57c2', '#B39DDB', '#D0BFEF', '#E4DBF4'],
 	  legend: 'none',
-	  chartArea: {'width': '100%', 'height': '80%'}
+	  chartArea: {'width': '100%','height': '90%'}
 	};
 
 	var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
 	chart.draw(data, options);
+
+
 }
 
 function drawLineChart() {
 	var data = google.visualization.arrayToDataTable([
 	  ['Year', 'Income', 'Expenses'],
-	  ['January',  1000,      400],
-	  ['February',  1170,      460],
-	  ['March',  660,       1120],
-	  ['April',  1030,      540],
-	  ['May',  1030,      540],
-	  ['June',  1030,      540],
-	  ['July',  1030,      540],
-	  ['August',  1030,      540],
-	  ['September',  1030,      540],
-	  ['October',  1030,      540],
-	  ['November',  1030,      540],
-	  ['December',  1030,      540],
+	  ['Jan',  10000,      3500],
+	  ['Feb',  10000,      2700],
+	  ['Mar',  10000,       4200],
+	  ['Apr',  12000,      3100],
+	  ['May',  10000,      2200],
+	  ['Jun',  10000,      2900],
+	  ['Jul',  13000,      5400],
+	  ['Aug',  10000,      4600],
+	  ['Sep',  15000,      4200],
+	  ['Oct',  10000,      4000],
+	  ['Nov',  10000,      3500],
+	  ['Dec',  10000,      4800],
 	]);
 
 	var options = {
@@ -55,11 +58,32 @@ function drawLineChart() {
 	  pieSliceTextStyle: {
 	  color: 'white',
 	  fontName: 'Roboto',
-	  fontSize: '13',
+	  fontSize: '8',
 	  fontWeight: '800'
 	  },
 
-	  legend: { position: 'none' }
+	  hAxis: {
+		textStyle:{
+            fontSize: '12',
+            fontName: 'Roboto',
+            color: '#263238'            
+		}
+        },
+
+        vAxis: {
+		textStyle:{
+            fontSize: '12',
+            fontName: 'Roboto',
+            color: '#263238',
+            fontWeight: '600',
+		}
+        },
+	  lineWidth: 3,
+	  colors: ['#31B87A', '#f44336'],
+	  chartArea: {'right':'40','width': '85%', 'height': 'auto'},
+	  pointSize: 0,
+	  legend: {position: 'none',
+	}
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));

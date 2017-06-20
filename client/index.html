@@ -55,8 +55,8 @@
     <div class="side-menu-container">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#"></span>Dashboard</a></li>
-            <li class="menu-item"><a href="#"></span>Detailed History</a></li>
-			<li class="menu-item"><a href="#"></span>Settings</a></li>
+            <li class="menu-item"><a href="history.html"></span>Detailed History</a></li>
+			<li class="menu-item"><a href="#"></span>Log Out</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
@@ -69,15 +69,29 @@
 <!-- Trigger the modal with a button -->
 <!--     <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add Expense</button> -->
 
-        <div class="dropdown">
-            <button class="btn" type="button" data-toggle="dropdown">Add new
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-text"><a href="#">Income</a></li>
-                <hr class="dropdown-divider">
-              <li class="dropdown-text"><a data-toggle="modal" data-target="#myModal">Expense</a></li>
-            </ul>
-      </div>
+
+    <div class="dropdown">
+        <button class="btn" type="button" data-toggle="dropdown">Add new
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-text"><a href="#">Deposit</a></li>
+            <hr class="dropdown-divider">
+          <li class="dropdown-text"><a data-toggle="modal" data-target="#myModal">Expense</a></li>
+        </ul>
+    </div>
+
+<!--       <div class="dropdown">
+          <button class="btn-calendar" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-calendar"></span>  June 2017
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-text"><a href="#">Deposit</a></li>
+              <hr class="dropdown-divider">
+            <li class="dropdown-text"><a data-toggle="modal" data-target="#myModal">Expense</a></li>
+          </ul>
+      </div> -->
+
+
+
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -164,7 +178,7 @@
                 </div>
 
                 <div class="col-lg-3 card-two-summary">
-                    <p class="card-summary">Congratulations! You save a total of </p><p class="card-change-summary">$5541.59 </p><p class="card-summary">this month, which is 23% more than you saved last month.</p><i class="em em-clap"></i><i class="em em-clap"></i> 
+                    <p class="card-summary">Congratulations! You saved a total of </p><p class="card-change-summary">$5541.59 </p><p class="card-summary">this month, which is 23% more than you saved last month.</p><i class="em em-clap"></i><i class="em em-clap"></i> 
 
             </a>
         </div>
@@ -248,10 +262,10 @@
                     <div class="container">
                         <div class="row-category">
                             <div class="col-xs-6">
-                              <h5 class="category-title">Drinks</h5>
+                              <h5 class="category-title-total">Totals</h5>
                             </div>
                             <div class="col-xs-6">
-                              <h5 class="category-amount">$456.32</h5>
+                              <h5 class="category-amount-total">$4,312</h5>
                             </div>
                         </div>
                     </div>
@@ -285,6 +299,7 @@
                     <h4 class="card-title">Spending trends</h4>
                     <hr class="card-divider-large">
                         <div id="curve_chart"></div>
+
                 </div>
             </a>
         </div>
